@@ -4,7 +4,7 @@
 using namespace std;
 
 
-class henkilo
+class Henkilo
 {
 private:
     string nimi;
@@ -13,9 +13,9 @@ private:
 public:
     //Henkilo luokan konstruktori on funktio Henkilo()
     //Sillä ei ole koskaan palautusarvon määrittelyä
-    //luokalla voi olla useita konstruktoreita (ylikuormittaminen)
-
-    henkilo();
+    //luokalla voi olla useita konstruktoreja (funktion ylikuormittaminen)
+    Henkilo();
+    Henkilo(string, int); //liittyy tehtävään 3
 
     string getNimi() const;
     void setNimi(const string &newNimi);
