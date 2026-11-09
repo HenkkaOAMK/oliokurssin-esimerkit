@@ -33,3 +33,25 @@ Luokan tulee sisältää:
 - Tarvittavat getter- ja setter-metodit (harkinnan mukaan).
 - Toimintojen toteuttamiseen tarvittavat metodit.
 - Tarvittavat tarkistukset, jotta automaatin tila ja raaka-ainemäärät pysyvät järkevinä.
+
+## Luokkakaavio CoffeeMaker luokalle
+```mermaid
+classDiagram
+    class CoffeeMaker {
+		- float v_tilavuus
+		- float v_maara
+		- float papu_kapasiteetti
+		- float papu_maara
+		- int valmistetut
+		- bool tila
+		
+		+ CoffeeMaker(float vt, float pk)
+		+ start() void
+		+ stop() void 
+		+ lisaaVetta(float vm) void
+		+ lisaaPapuja(float pa) void
+		+ makeCoffee() void
+		+ showStatus() void
+		+ showMaked() void        
+		}
+```
