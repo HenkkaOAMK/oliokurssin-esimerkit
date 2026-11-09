@@ -1,7 +1,7 @@
-#Kahviautomaatti
+# Kahviautomaatti
 
-Kahviautomaatti
 Kuvaus
+
 Kahviautomaatti on laite, joka valmistaa käyttäjälle kahvia. Automaatissa on tietty määrä vettä ja kahvipapuja. Käyttäjä voi valita haluamansa kahvityypin, esimerkiksi tavallisen kahvin tai espresson.
 
 Automaatilla on seuraavat ominaisuudet:
@@ -10,6 +10,7 @@ Automaatilla on seuraavat ominaisuudet:
 - Kahvipapusäiliön kapasiteetti ja senhetkinen papujen määrä.
 - Valmistettujen kahviannosten lukumäärä.
 - Automaatin tila (päällä tai pois päältä).
+
 Automaatilla voidaan suorittaa seuraavia toimintoja:
 
 - Käynnistää ja sammuttaa automaatti.
@@ -18,15 +19,17 @@ Automaatilla voidaan suorittaa seuraavia toimintoja:
 - Valmistaa kahviannos, jos vettä ja kahvipapuja on riittävästi.
 - Näyttää automaatin tämänhetkiset tiedot.
 - Palauttaa tieto siitä, kuinka monta kahviannosta automaatilla on valmistettu.
+
 Kahvin valmistaminen kuluttaa vettä ja kahvipapuja. Jos automaatissa ei ole riittävästi raaka-aineita tai automaatti ei ole päällä, kahvia ei voida valmistaa.
 
 Suunnittelutehtävä
+
 Suunnitellaan kuvauksen perusteella C++-luokka CoffeeMaker.
 
 Luokan tulee sisältää:
 
-Sopivat attribuutit.
-Konstruktori.
-Tarvittavat getter- ja setter-metodit (harkinnan mukaan).
-Toimintojen toteuttamiseen tarvittavat metodit.
-Tarvittavat tarkistukset, jotta automaatin tila ja raaka-ainemäärät pysyvät järkevinä.
+- Sopivat attribuutit.
+- Konstruktori.
+- Tarvittavat getter- ja setter-metodit (harkinnan mukaan).
+- Toimintojen toteuttamiseen tarvittavat metodit.
+- Tarvittavat tarkistukset, jotta automaatin tila ja raaka-ainemäärät pysyvät järkevinä.

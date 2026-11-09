@@ -5,7 +5,8 @@ project(H2T5Kahvi LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(H2T5Kahvi main.cpp)
+add_executable(H2T5Kahvi main.cpp
+    coffeemaker.h coffeemaker.cpp)
 
 include(GNUInstallDirs)
 install(TARGETS H2T5Kahvi
