@@ -58,14 +58,14 @@ void CoffeeMaker::makeCoffee()
     }
     else
     {
-        cout<<"Tarkista, että  automaatti on paalla ja tarvikkeita on tarpeeksi"<<endl;
+        cout<<"Tarkista, etta  automaatti on paalla ja tarvikkeita on tarpeeksi"<<endl;
     }
 }
 
 void CoffeeMaker::showStatus()
 {
-    cout<<"Automaatissa on vettä: "<<v_maara<<endl;
-    cout<<"Automaatissa on papuja: "<<papu_maara<<endl;
+    cout<<"Automaatissa on vetta: "<<v_maara<<" dl"<<endl;
+    cout<<"Automaatissa on papuja: "<<papu_maara<<" dl"<<endl;
     if(tila==false){
         cout<<"Automaatti on OFF tilassa"<<endl;
     }
