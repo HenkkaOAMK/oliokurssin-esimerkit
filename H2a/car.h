@@ -1,0 +1,21 @@
+#ifndef CAR_H
+#define CAR_H
+#include <iostream>
+
+using namespace std;
+
+class Car
+{
+private:
+    string brand;
+    string model;
+    int yearModel;
+public:
+    Car();
+    void setBrand(string b);
+    void setModel(string m);
+    void setYearModel(int y);
+    void printData();
+};
+
+#endif // CAR_H
