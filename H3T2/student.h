@@ -9,6 +9,7 @@ private:
     int studentId;
 public:
     Student(string, int);
+    ~Student();
     virtual void sayStatus() override;
 };
 

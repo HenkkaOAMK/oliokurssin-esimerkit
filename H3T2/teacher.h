@@ -9,6 +9,7 @@ private:
     int departmentId;
 public:
     Teacher(string, int);
+    ~Teacher();
     virtual void sayStatus();
 };
 
