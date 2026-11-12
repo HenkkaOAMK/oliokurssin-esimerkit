@@ -1,27 +1,23 @@
-# Luokkakaavio
-
-Luokka **Opiskelija** perii luokan **Henkilo**
+# Tehtävän luokkakaavio
 
 ```mermaid
 classDiagram
-    class Henkilo {
-		- string nimi
-		- int ika
-		
-		+ Henkilo(string, int)
-		+ getNimi() string 
-		+ setNimi(string) void
-		+ getIka() int
-		+ setIka(int) void
-		+ tulostaTiedot() void		
+    class Person {
+		-string name
+        +Person(string)
+        +getName() string
+		+sayStatus() void			
 	}
-	
 	class Student{
-		- string opiskelijanumero
-		+ Opiskelija(string, int, string)
-		+ getOpiskelijanumero() string
-		+ setOpiskelijanumero(string) void
-		+tulostaTiedot() void
+        -int studentId
+        +Student(string, int)
+		+sayStatus() void
 	}
-	Henkilo <|-- Student
+	class Teacher{
+        -int departmentId
+        +Teacher(string, int)
+		+sayStatus() void
+	}
+	Person <|-- Student
+	Person <|-- Teacher
 ```
