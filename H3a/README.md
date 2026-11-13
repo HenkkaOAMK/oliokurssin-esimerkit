@@ -13,5 +13,5 @@ classDiagram
 		+getName() string
         +makePasta() void
 	}
-	Person <|-- ItalianChef
+	Chef <|-- ItalianChef
 ```
