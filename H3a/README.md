@@ -3,7 +3,7 @@
 ```mermaid
 classDiagram
     class Chef {
-		#string name
+		#name: string
         +Chef(string)
 		+makeSalad() void
         +makeSoup() void
