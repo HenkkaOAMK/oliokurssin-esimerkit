@@ -9,8 +9,8 @@ private:
     double overdraftLimit;
 public:
     CheckingAccount(string ac, double ol);
-    virtual void withdraw(double) override;
-    virtual void noObject() override;
+    void withdraw(double) override;
+    void noObject() override;
     void setOverdraftLimit(double newOverdraftLimit);
 };
 
