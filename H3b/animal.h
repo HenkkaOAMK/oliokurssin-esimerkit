@@ -8,7 +8,7 @@ class Animal
 {
 public:
     Animal();
-    virtual ~Animal() = default; //extraa
+    virtual ~Animal() = default;
     virtual void callOut();
 };
 
