@@ -19,13 +19,13 @@ classDiagram
 	class Henkilo{
 		- string enimi
 		- string snimi
-		- unique_ptr<Osoite> objOsoite
+		- unique_ptr(Osoite) objOsoite
 	    + Henkilo(string, string, string, string, string)
     	+ tulostaTiedot() void
 
 	}
 		class Yritys{
-		- vector<unique_ptr<Henkilo>> henkilolista
+		- vector(unique_ptr(Henkilo)) henkilolista
 		- string nimi
 		- string toimiala
 	    + Yritys()
