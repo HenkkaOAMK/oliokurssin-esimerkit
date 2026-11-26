@@ -21,6 +21,40 @@ classDiagram
 
 	Company "*" o-- "*" Employee : works
 	
+		
+```
+
+## Tietokanta
+
+Jos tämän sovelluksen tapainen data pitäisi tallentaa
+relaatiotietokantaan, niin ratkaisu olisi tällainen:
+
+
+- Employee ja Company taulujen välillä yhteys monen suhde moneen. Tarvitaa
+siis välitystaulu.
+
+### ER-Kaavio
+
+```mermaid
+
+erDiagram
+	Company ||--o{ company_employee: "has employees"
+	Employee ||--o{ company_employee: "works"
 	
+	Company{
+		INT idCompany PK
+		VARCHAR(40) companyName
+
+	}
+	Employee{
+		INT idEmployee PK
+		VARCHAR(30) fname
+		VARCHAR(30) lname
+	}
 	
+	company_employee{
+		INT idCompany PK, FK
+		INT idEmployee PK, FK
+	}
+		
 ```
