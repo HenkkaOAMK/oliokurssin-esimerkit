@@ -9,8 +9,5 @@ int main()
     objCar.setEngine();
     objCar.setWheels();
     objCar.printDetails();
-
-
-
     return 0;
 }
